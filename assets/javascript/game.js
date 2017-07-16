@@ -1,22 +1,23 @@
-// Variables ####
+    
+    
+    // Variables ####
 
 var randNum;
 var currentTally;
 var wins = 0;
 var losses = 0;
 
-// Gameplay #####
+    // Gameplay #####
 
 var game = {
-
-
-
-  // Random number generator #####
+    // Random number generator #####
 
   start: function() {
     currentTally = 0;
     $("#score").text(currentTally);
     //$("#winLosses").text("");
+
+
 
     randNum = this.getRandomNumber(19, 120);
     $("#diamond").val(this.getRandomNumber(1, 12));
@@ -45,13 +46,15 @@ var game = {
       wins++;
       game.updateDisplay("YOU DID IT!!!", "win");
       game.start();
+
     } else if (currentTally > randNum) {
       losses++;
       game.updateDisplay("TOUGH LUCK...BETTER LUCK NEXT TIME", "loss");
       game.start();
     }
   },
-  // Win/Loss Scoring #####
+
+    // Win/Loss Scoring #####
 
   updateDisplay: function(resultText, updateType) {
     alert(resultText);
@@ -63,6 +66,8 @@ var game = {
   }
 };
 
+    // Buttons #####
+
 $(document).ready(function() {
   game.start();
   $("#diamond").on("click", game.takeTurn);
@@ -71,7 +76,6 @@ $(document).ready(function() {
   $("#emerald").on("click", game.takeTurn);
 });
 
-// Buttons #####
 
 // make the updateDisplay an alert
 
