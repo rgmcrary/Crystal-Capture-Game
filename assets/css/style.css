@@ -25,7 +25,13 @@ body {
   padding-left: 0px;
 }
 
-.instructions {
+#instructButton {
+  font-size: 20px;
+  font-weight: bold;
+  background: #e3c670;
+}
+
+#instructions {
   background: white;
   font-size: 18px;
   font-weight: bold;
@@ -33,6 +39,7 @@ body {
   text-align: left;
   padding-top: 5px;
   height: 200px;
+  margin-bottom: 20px;
 }
 
 ul {
@@ -55,15 +62,13 @@ ul {
   text-align: center;
   font-weight: bold;
   background: red;
-  margin-top: 10px;
 }
 
 #winsarea {
   background: #c2e1e7;
-  height: 175px;
+  height: 150px;
   width: 200px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 30px;
@@ -72,10 +77,9 @@ ul {
 
 #lossesarea {
   background: #c2e1e7;
-  height: 175px;
+  height: 150px;
   width: 200px;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-align: center;
   vertical-align: middle;
   font-size: 30px;
@@ -90,8 +94,8 @@ ul {
 }
 
 input {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   padding: auto;
   margin: 50px 10px 5px 10px;
 }
@@ -99,7 +103,7 @@ input {
 /* Comparison  */
 #target {
   background: #c2e1e7;
-  height: 175px;
+  height: 150px;
   width: 200px;
   margin-top: 75px;
   margin-bottom: 40px;
@@ -111,7 +115,7 @@ input {
 
 #scoreBox {
   background: #c2e1e7;
-  height: 175px;
+  height: 150px;
   width: 200px;
   margin-top: 75px;
   margin-bottom: 40px;

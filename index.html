@@ -22,22 +22,21 @@
     <div class="container gameSpace">
 
         <!-- Instructions  -->
-
-        <div class="container instructions">
-            <div class="row">
+        <div class="container">
+            <button data-toggle="collapse" data-target="#instructions" id="instructButton">Instructions</button>
+            <div id="instructions" class="collapse">
                 <ul>
-                <li>You will be given a random number at the start of the game.</li>
-                <li>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your
-                    total score.
-                </li>
-                <li>You win the game by matching your total score to random number; you lose the game if your total score goes
-                    above the random number.</li>
-                <li>The value of each crystal is hidden from you until you click on it.</li>
-                <li>Each time, when the game starts, the game will change the values of each crystal.</li>
+                    <li>You will be given a random number at the start of the game.</li>
+                    <li>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to
+                        your total score.
+                    </li>
+                    <li>You win the game by matching your total score to random number; you lose the game if your total score
+                        goes above the random number.</li>
+                    <li>The value of each crystal is hidden from you until you click on it.</li>
+                    <li>Each time, when the game starts, the game will change the values of each crystal.</li>
                 </ul>
             </div>
         </div>
-
 
         <div class="container gameBody">
 
@@ -81,10 +80,14 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
 
-        <script source src="assets/javascript/game.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script source src="assets/javascript/game.js" type="text/javascript"></script>
+
 
 </body>
 
